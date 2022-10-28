@@ -9,11 +9,12 @@ public class urinalsTest {
     @Test
     public void test_pass_or_fail() {
         System.out.println("====== Vijaychetan == TEST ZERO EXECUTED =========");
-       assertEquals(5,5);
+        assertEquals(5, 5);
 
-}
+    }
+
     @Test
-    public void testValidation(){
+    public void testValidation() {
         System.out.println(" ====== Vijaychetan ==== TEST ONE EXECUTED =======");
         assertEquals(true, urinals.gbstring("100001"));
         assertEquals(true, urinals.gbstring("10101"));
@@ -25,5 +26,18 @@ public class urinalsTest {
         assertEquals(false, urinals.gbstring("08888-[]001"));
     }
 
+    @Test
+    public void testTheLengthOfTheString() {
+        System.out.println(" ====== Vijaychetan ==== TEST TWO EXECUTED =======");
+        assertEquals(true, urinals.gbstring("100001"));
+       // The length of the string is  more than 15
+        assertEquals(false, urinals.gbstring("000000000000000000000"));
+        // The length of the string is 1
+        assertEquals(true, urinals.gbstring("0"));
+
+
+
     }
 
+
+}
