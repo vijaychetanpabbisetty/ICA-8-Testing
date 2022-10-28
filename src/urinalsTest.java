@@ -44,6 +44,16 @@ public class urinalsTest {
         assertEquals(true, urinals.gbstring("000"));
     }
 
+    @Test
+    public void checkStringForTheOutput() {
+        System.out.println(" ====== Vijaychetan ==== TEST FOUR EXECUTED =======");
+        assertEquals(1, urinals.number_of_free_urinals("10001"));
+        assertEquals(0, urinals.number_of_free_urinals("1001"));
+        assertEquals(3, urinals.number_of_free_urinals("00000"));
+        assertEquals(2, urinals.number_of_free_urinals("0000"));
+
+    }
+
 
 
 
