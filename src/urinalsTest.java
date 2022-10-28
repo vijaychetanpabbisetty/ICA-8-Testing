@@ -30,14 +30,21 @@ public class urinalsTest {
     public void testTheLengthOfTheString() {
         System.out.println(" ====== Vijaychetan ==== TEST TWO EXECUTED =======");
         assertEquals(true, urinals.gbstring("100001"));
-       // The length of the string is  more than 15
-        assertEquals(false, urinals.gbstring("000000000000000000000"));
-        // The length of the string is 1
+
+        assertEquals(false, urinals.gbstring("000000000000000000000000000000"));
+
         assertEquals(true, urinals.gbstring("0"));
+    }
+
+    @Test
+    public void check11() {
+        System.out.println(" ====== Vijaychetan ==== TEST THREE EXECUTED =======");
+        assertEquals(false, urinals.gbstring("11"));
+        assertEquals(true, urinals.gbstring("10101"));
+        assertEquals(true, urinals.gbstring("000"));
+    }
+
 
 
 
     }
-
-
-}
